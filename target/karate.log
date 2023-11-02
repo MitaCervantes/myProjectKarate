@@ -1,0 +1,2 @@
+19:10:51.266 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Tag
+19:10:52.512 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
