@@ -3,7 +3,7 @@ Feature: clockify tests projects
 
   Background: Headers and URL
     Given url urlBase
-    And header x-api-key = 'MWQ4ODMwYmYtMGQyOC00OWYyLWIzYjAtYWEzNjI4MWM4ZmUx'
+    And header x-api-key = ''
 
   @GetProject
   Scenario Outline: Consultar proyecto por id
