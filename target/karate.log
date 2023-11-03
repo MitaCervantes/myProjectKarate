@@ -1,2 +1,256 @@
-19:10:51.266 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Tag
-19:10:52.512 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:58:16.249 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Clockify
+16:58:17.177 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:58:17.184 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+16:58:18.146 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:18.146 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:18.146 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:18.524 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.clockify.me/api/v1/workspaces/6523381733ae762f43636497/projects/652997ce1294281e42070a72
+1 > x-api-key: MWQ4ODMwYmYtMGQyOC00OWYyLWIzYjAtYWEzNjI4MWM4ZmUx
+1 > Host: api.clockify.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:58:18.524 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.clockify.me/api/v1/workspaces/6523381733ae762f43636497/time-entries
+1 > x-api-key: MWQ4ODMwYmYtMGQyOC00OWYyLWIzYjAtYWEzNjI4MWM4ZmUx
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 318
+1 > Host: api.clockify.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 > Accept-Encoding: gzip,deflate
+{"billable":true,"customAttributes":[{"name":"Project2","namespace":"","value":""}],"customFields":[{"customFieldId":"","sourceType":"WORKSPACE","value":{}}],"description":"Crowdar Time Entry","end":"2019-08-24T14:15:22Z","projectId":"652997ce1294281e42070a72","start":"2019-08-24T14:15:22Z","tagIds":[""],"taskId":""}
+
+16:58:18.524 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.clockify.me/api/v1/workspaces/6523381733ae762f43636497/time-entries
+1 > x-api-key: MWQ4ODMwYmYtMGQyOC00OWYyLWIzYjAtYWEzNjI4MWM4ZmUx
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 318
+1 > Host: api.clockify.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 > Accept-Encoding: gzip,deflate
+{"billable":true,"customAttributes":[{"name":"Project2","namespace":"","value":""}],"customFields":[{"customFieldId":"","sourceType":"WORKSPACE","value":{}}],"description":"Crowdar Time Entry","end":"2019-08-24T14:15:22Z","projectId":"652997ce1294281e42070a72","start":"2019-08-24T14:15:22Z","tagIds":[""],"taskId":""}
+
+16:58:19.822 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1295
+1 < 200
+1 < Date: Fri, 03 Nov 2023 19:58:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 649
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expected-Client-Version: 1.0.0
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Auth-Checksum: c2760c0420ae59a60b51a4caccd844f7db2f342b9ff969d328134f02cbbb8804
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 0
+{"id":"652997ce1294281e42070a72","name":"Project2","hourlyRate":{"amount":0,"currency":"USD"},"clientId":"","workspaceId":"6523381733ae762f43636497","billable":false,"memberships":[{"userId":"6523381733ae762f43636496","hourlyRate":null,"costRate":null,"targetId":"652997ce1294281e42070a72","membershipType":"PROJECT","membershipStatus":"ACTIVE"}],"color":"#3F51B5","estimate":{"estimate":"PT0S","type":"AUTO"},"archived":true,"duration":"PT0S","clientName":"","note":"","costRate":null,"timeEstimate":{"estimate":"PT0S","type":"AUTO","resetOption":null,"active":false,"includeNonBillable":true},"budgetEstimate":null,"template":false,"public":false}
+
+16:58:19.839 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1313
+1 < 201
+1 < Date: Fri, 03 Nov 2023 19:58:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 393
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expected-Client-Version: 1.0.0
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Auth-Checksum: c2760c0420ae59a60b51a4caccd844f7db2f342b9ff969d328134f02cbbb8804
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 0
+{"id":"654550db894cb47ead03bd63","description":"Crowdar Time Entry","tagIds":[""],"userId":"6523381733ae762f43636496","billable":true,"taskId":"","projectId":"652997ce1294281e42070a72","timeInterval":{"start":"2019-08-24T14:15:22Z","end":"2019-08-24T14:15:22Z","duration":"PT0S"},"workspaceId":"6523381733ae762f43636497","isLocked":false,"customFieldValues":[],"type":"REGULAR","kioskId":null}
+
+16:58:19.839 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1314
+1 < 201
+1 < Date: Fri, 03 Nov 2023 19:58:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 393
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expected-Client-Version: 1.0.0
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Auth-Checksum: c2760c0420ae59a60b51a4caccd844f7db2f342b9ff969d328134f02cbbb8804
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 0
+{"id":"654550db7b45e936510f75e8","description":"Crowdar Time Entry","tagIds":[""],"userId":"6523381733ae762f43636496","billable":true,"taskId":"","projectId":"652997ce1294281e42070a72","timeInterval":{"start":"2019-08-24T14:15:22Z","end":"2019-08-24T14:15:22Z","duration":"PT0S"},"workspaceId":"6523381733ae762f43636497","isLocked":false,"customFieldValues":[],"type":"REGULAR","kioskId":null}
+
+16:58:19.854 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > DELETE https://api.clockify.me/api/v1/workspaces/6523381733ae762f43636497/time-entries/654550db894cb47ead03bd63
+2 > x-api-key: MWQ4ODMwYmYtMGQyOC00OWYyLWIzYjAtYWEzNjI4MWM4ZmUx
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api.clockify.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+2 > Accept-Encoding: gzip,deflate
+
+
+16:58:19.854 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > PUT https://api.clockify.me/api/v1/workspaces/6523381733ae762f43636497/time-entries/654550db7b45e936510f75e8
+2 > x-api-key: MWQ4ODMwYmYtMGQyOC00OWYyLWIzYjAtYWEzNjI4MWM4ZmUx
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 307
+2 > Host: api.clockify.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+2 > Accept-Encoding: gzip,deflate
+{"billable":true,"customAttributes":[{"name":"Project2","namespace":"","value":""}],"customFields":[{"customFieldId":"","sourceType":"WORKSPACE","value":{}}],"description":"editado","end":"2019-08-24T14:15:22Z","projectId":"652997ce1294281e42070a72","start":"2019-08-24T14:15:22Z","tagIds":[""],"taskId":""}
+
+16:58:20.655 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 801
+2 < 200
+2 < Date: Fri, 03 Nov 2023 19:58:20 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 380
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expected-Client-Version: 1.0.0
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < X-Auth-Checksum: c2760c0420ae59a60b51a4caccd844f7db2f342b9ff969d328134f02cbbb8804
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-Xss-Protection: 0
+{"id":"654550db7b45e936510f75e8","description":"editado","tagIds":[],"userId":"6523381733ae762f43636496","billable":true,"taskId":"","projectId":"652997ce1294281e42070a72","timeInterval":{"start":"2019-08-24T14:15:22Z","end":"2019-08-24T14:15:22Z","duration":"PT0S"},"workspaceId":"6523381733ae762f43636497","isLocked":false,"customFieldValues":[],"type":"REGULAR","kioskId":null}
+
+16:58:20.659 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "responseHeaders": {
+    "Date": [
+      "Fri, 03 Nov 2023 19:58:19 GMT"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Content-Length": [
+      "393"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "Cache-Control": [
+      "no-cache, no-store, max-age=0, must-revalidate"
+    ],
+    "Expected-Client-Version": [
+      "1.0.0"
+    ],
+    "Expires": [
+      "0"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Strict-Transport-Security": [
+      "max-age=31536000 ; includeSubDomains"
+    ],
+    "Vary": [
+      "Origin",
+      "Access-Control-Request-Method",
+      "Access-Control-Request-Headers"
+    ],
+    "X-Auth-Checksum": [
+      "c2760c0420ae59a60b51a4caccd844f7db2f342b9ff969d328134f02cbbb8804"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ],
+    "X-Xss-Protection": [
+      "0"
+    ]
+  },
+  "id": "654550db7b45e936510f75e8",
+  "body": {
+    "billable": true,
+    "customAttributes": [
+      {
+        "name": "Project2",
+        "namespace": "",
+        "value": ""
+      }
+    ],
+    "customFields": [
+      {
+        "customFieldId": "",
+        "sourceType": "WORKSPACE",
+        "value": {
+        }
+      }
+    ],
+    "description": "Crowdar Time Entry",
+    "end": "2019-08-24T14:15:22Z",
+    "projectId": "652997ce1294281e42070a72",
+    "start": "2019-08-24T14:15:22Z",
+    "tagIds": [
+      ""
+    ],
+    "taskId": ""
+  },
+  "responseStatus": 201,
+  "response": {
+    "id": "654550db7b45e936510f75e8",
+    "description": "Crowdar Time Entry",
+    "tagIds": [
+      ""
+    ],
+    "userId": "6523381733ae762f43636496",
+    "billable": true,
+    "taskId": "",
+    "projectId": "652997ce1294281e42070a72",
+    "timeInterval": {
+      "start": "2019-08-24T14:15:22Z",
+      "end": "2019-08-24T14:15:22Z",
+      "duration": "PT0S"
+    },
+    "workspaceId": "6523381733ae762f43636497",
+    "isLocked": false,
+    "customFieldValues": [
+    ],
+    "type": "REGULAR",
+    "kioskId": null
+  }
+}
+ 
+16:58:20.703 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 849
+2 < 204
+2 < Date: Fri, 03 Nov 2023 19:58:20 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expected-Client-Version: 1.0.0
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < X-Auth-Checksum: c2760c0420ae59a60b51a4caccd844f7db2f342b9ff969d328134f02cbbb8804
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-Xss-Protection: 0
+
+
+16:58:21.614 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/clockify/clockify.feature

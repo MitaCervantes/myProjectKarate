@@ -6,7 +6,8 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    urlBase: 'https://api.clockify.me/api/v1'
   }
   if (env == 'dev') {
     // customize
